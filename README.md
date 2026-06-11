@@ -3,6 +3,7 @@
 ## 📌 Project Overview
 
 This project is an end-to-end automation framework developed for the ParaBank demo banking application with
+
  👉 UI ref  : https://parabank.parasoft.com/parabank/login.htm
  👉 API ref : https://parabank.parasoft.com/parabank/api-docs/index.html
 
