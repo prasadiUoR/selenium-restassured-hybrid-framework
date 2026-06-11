@@ -42,79 +42,69 @@ This framework demonstrates enterprise-style hybrid testing practices including 
 
 ```
 hybridAutomation/
-│
-|   mvnw
-|   mvnw.cmd
-|   pom.xml
-|   structure.txt
-|   testngAPI.xml
-|   testngHybrid.xml
-|   testngUI.xml
 |   
-+---.mvn
-|   \---wrapper
-|           maven-wrapper.properties
-|           
-+---reports
-|       Test-Report-2026.06.11.13.36.31.html       
-|       
-+---src
-|   +---main
-|   |   +---java
-|   |   |   +---api
-|   |   |   |   +---base
-|   |   |   |   |       BaseAPI.java
+├── src
+|   ├── main
+|   |   ├── java
+|   |   |   ├── api
+|   |   |   |   ├── base
+|   |   |   |   |   └── BaseAPI.java
 |   |   |   |   |       
-|   |   |   |   +---models
-|   |   |   |   |       Customer.java
+|   |   |   |   ├── models
+|   |   |   |   |   └── Customer.java
 |   |   |   |   |       
-|   |   |   |   +---service
-|   |   |   |   |       CustomerService.java
+|   |   |   |   ├── service
+|   |   |   |   |   └── CustomerService.java
 |   |   |   |   |       
-|   |   |   |   \---specs
-|   |   |   |           RequestSpecs.java
-|   |   |   |           ResponseSpecs.java
+|   |   |   |   └── specs
+|   |   |   |        ├── RequestSpecs.java
+|   |   |   |        └── ResponseSpecs.java
 |   |   |   |           
-|   |   |   +---ui
-|   |   |   |   +---base
-|   |   |   |   |       BaseUI.java
+|   |   |   ├── ui
+|   |   |   |   ├── base
+|   |   |   |   |   └── BaseUI.java
 |   |   |   |   |       
-|   |   |   |   \---pages
-|   |   |   |           AccountOverview.java
-|   |   |   |           BasePage.java
-|   |   |   |           CustomerHomePage.java
-|   |   |   |           LoginPage.java
-|   |   |   |           RegisterPage.java
+|   |   |   |   └── pages
+|   |   |   |       ├── AccountOverview.java
+|   |   |   |       ├── BasePage.java
+|   |   |   |       ├── CustomerHomePage.java
+|   |   |   |       ├── LoginPage.java
+|   |   |   |       └── RegisterPage.java
 |   |   |   |           
-|   |   |   \---utils
-|   |   |           ConfigReader.java
-|   |   |           FakerUtil.java
+|   |   |   └── utils
+|   |   |       ├── ConfigReader.java
+|   |   |       └── FakerUtil.java
 |   |   |           
-|   |   \---resources
-|   |           config.properties
+|   |   └──resources
+|   |      └── config.properties
 |   |           
-|   \---test
-|       +---java
-|       |   +---api
-|       |   |       LoginAPITest.java
+|   └── test
+|       ├── java
+|       |   ├── api
+|       |   |   └── LoginAPITest.java
 |       |   |       
-|       |   +---base
-|       |   |       BaseAPITest.java
-|       |   |       BaseHybridTest.java
-|       |   |       BaseUITest.java
+|       |   ├── base
+|       |   |   ├── BaseAPITest.java
+|       |   |   ├── BaseHybridTest.java
+|       |   |   └── BaseUITest.java
 |       |   |       
-|       |   +---hybrid
-|       |   |       CustomerRegistrationHybridTest.java
+|       |   ├── hybrid
+|       |   |   └── CustomerRegistrationHybridTest.java
 |       |   |       
-|       |   +---ui
-|       |   |       CustomerRegistrationTest.java
-|       |   |       LoginTest.java
+|       |   ├── ui
+|       |   |   ├── CustomerRegistrationTest.java
+|       |   |   └── LoginTest.java
 |       |   |       
-|       |   \---utils
-|       |           ExtentReportManager.java
+|       |   └── utils
+|       |       └── ExtentReportManager.java
 |       |           
-|       \---resources
-|               log4j2.xml
+|       └── resources
+|           └── log4j2.xml
+|
+├── testngAPI.xml
+├── testngHybrid.xml
+├── testngUI.xml          
+└── reports 
               
 
 ```
@@ -154,16 +144,16 @@ CI/CD Status:
 ---
 ## Project Results
 
-- Test Execution Screenshot  
+- Test Execution
   ![Test Execution](hybridAutomation/screenshots/test-execution.png)
   
-- Extent Report Screenshot - UI Test  
+- Test Execution Results - UI Tests  
   ![Test Execution](hybridAutomation/screenshots/ui-automation-repost.png)
 
-- Extent Report Screenshot - API Test  
+- Test Execution Results - API Tests 
   ![Test Execution](hybridAutomation/screenshots/api-automation-repost.png)
 
-- Extent Report Screenshot - Hybrid Test  
+- Test Execution Results - Hybrid Tests  
   ![Test Execution](hybridAutomation/screenshots/hybrid-automation-repost.png)
 
 
