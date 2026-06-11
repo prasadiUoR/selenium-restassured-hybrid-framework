@@ -2,9 +2,10 @@
 
 ## 📌 Project Overview
 
-This project is an end-to-end automation framework developed for the ParaBank demo banking application with
+This project is an end-to-end automation framework developed for the ParaBank demo banking application:
 
  👉 UI ref  : https://parabank.parasoft.com/parabank/login.htm
+ 
  👉 API ref : https://parabank.parasoft.com/parabank/api-docs/index.html
 
 It is built using **Java**, **Selenium WebDriver**, **RestAssured**, **TestNG**, **Maven**, **Page Object Models**, and **Extent Reports**.
@@ -152,12 +153,18 @@ CI/CD Status:
 
 ---
 ## Project Results
-- Test Execution Screenshot
+
+- Test Execution Screenshot  
+  ![Test Execution](hybridAutomation/screenshots/test-execution.png)
   
-  ![Test Execution](restAssuredAutomation/screenshots/test-execution.png)
-- Extent Report Screenshot
-  
-  ![Test Execution](restAssuredAutomation/screenshots/test-execution-report.png)
+- Extent Report Screenshot - UI Test  
+  ![Test Execution](hybridAutomation/screenshots/ui-automation-repost.png)
+
+- Extent Report Screenshot - API Test  
+  ![Test Execution](hybridAutomation/screenshots/api-automation-repost.png)
+
+- Extent Report Screenshot - Hybrid Test  
+  ![Test Execution](hybridAutomation/screenshots/hybrid-automation-repost.png)
 
 
 ---  
