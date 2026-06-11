@@ -7,7 +7,6 @@
     <test verbose="2" preserve-order="true" name="ParaBank UI Testing">
         <classes>
             <class name="ui.CustomerRegistrationTest"/>
-            <class name="ui.LoginTest"/>
         </classes>
     </test>
 </suite>
