@@ -10,7 +10,7 @@ This project is an end-to-end automation framework developed for the ParaBank de
 
 It is built using **Java**, **Selenium WebDriver**, **RestAssured**, **TestNG**, **Maven**, **Page Object Models**, and **Extent Reports**.
 
-This framework demonstrates enterprise-style hybrid testing practices including request/response specifications, test data management, reporting, and CI/CD integration.
+This framework demonstrates modern automation testing practices by combining UI, API, and Hybrid testing techniques within a maintainable automation framework.
 
 ---
 
