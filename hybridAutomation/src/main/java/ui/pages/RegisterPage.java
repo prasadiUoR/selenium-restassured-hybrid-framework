@@ -70,6 +70,8 @@ public class RegisterPage extends BasePage{
         txtPassword.sendKeys(customer.getPassword());
         txtConfirm.sendKeys(customer.getRepeatedPassword());
         registerButton.click();
+        System.out.println(driver.getCurrentUrl());
+        System.out.println(driver.getTitle());
         return new CustomerHomePage(driver,wait);
 
 

@@ -18,6 +18,10 @@ public class BaseUI {
 
     public void initUI() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
 //        Map<String, Object> prefs = new HashMap<>();
 //        prefs.put("credentials_enable_service", false);
 //        prefs.put("profile.password_manager_enabled", false);
@@ -30,16 +34,16 @@ public class BaseUI {
 //        options.addArguments("--no-sandbox");
 //        options.addArguments("--disable-dev-shm-usage");
 
-        options.addArguments("--headless=new");
-//        options.addArguments("--window-size=1920,1080");
+//        options.addArguments("--headless=new");
+
 //        options.addArguments("--no-sandbox");
 //        options.addArguments("--disable-dev-shm-usage");
         driver = new ChromeDriver(options);
 //        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(ConfigReader.get("appURL"));
-        driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        driver.manage().window().maximize();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
 
