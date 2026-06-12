@@ -18,15 +18,20 @@ public class BaseUI {
 
     public void initUI() {
         ChromeOptions options = new ChromeOptions();
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
+//        Map<String, Object> prefs = new HashMap<>();
+//        prefs.put("credentials_enable_service", false);
+//        prefs.put("profile.password_manager_enabled", false);
+//
+//        options.setExperimentalOption("prefs", prefs);
+//        options.addArguments("--incognito");
+//        options.addArguments("--disable-notifications");
+//        options.addArguments("--disable-save-password-bubble");
+//        options.addArguments("--headless=new");
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-dev-shm-usage");
 
-        options.setExperimentalOption("prefs", prefs);
-        options.addArguments("--incognito");
-        options.addArguments("--disable-notifications");
-        options.addArguments("--disable-save-password-bubble");
         options.addArguments("--headless=new");
+        options.addArguments("--window-size=1920,1080");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         driver = new ChromeDriver(options);
