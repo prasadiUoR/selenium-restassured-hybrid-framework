@@ -43,7 +43,7 @@ public class BaseUI {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(ConfigReader.get("appURL"));
 //        driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
 
