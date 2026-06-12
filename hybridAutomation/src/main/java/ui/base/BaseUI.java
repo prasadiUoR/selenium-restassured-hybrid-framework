@@ -30,12 +30,12 @@ public class BaseUI {
 //        options.addArguments("--no-sandbox");
 //        options.addArguments("--disable-dev-shm-usage");
 
-        options.addArguments("--headless=new");
-        options.addArguments("--window-size=1920,1080");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        driver = new ChromeDriver(options);
-//        driver = new ChromeDriver();
+//        options.addArguments("--headless=new");
+//        options.addArguments("--window-size=1920,1080");
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-dev-shm-usage");
+//        driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(ConfigReader.get("appURL"));
         driver.manage().window().maximize();
